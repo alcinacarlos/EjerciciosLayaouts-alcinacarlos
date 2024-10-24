@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="600dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    
+    android:layout_height="600dp">
+
     <TextView
         android:id="@+id/logo"
         android:layout_width="250dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="@+id/usuario"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:background="#8FD3F2"
+        android:gravity="center"
         android:text="@string/login_to_guapo"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:gravity="center"
-        >
-    </TextView>
+        app:layout_constraintBottom_toBottomOf="@+id/usuario"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/usuario"
@@ -28,9 +26,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-    </EditText>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/contrasena"
         android:layout_width="300dp"
@@ -39,24 +36,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="-100dp"
         app:layout_constraintTop_toTopOf="@+id/usuario"
-        >
-    </EditText>
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/contrasena"
-        android:text="Login"
-        >
-
+        app:layout_constraintTop_toTopOf="@+id/contrasena">
     </Button>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
