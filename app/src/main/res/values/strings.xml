@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EjerciciosLayaouts-alcinacarlos</string>
+    <string name="login_to_guapo">Login to guapo</string>
+    <string name="introduce_tu_usuario">Introduce tu usuario</string>
+    <string name="introduce_tu_contrase_a">Introduce tu contraseña</string>
+</resources>
